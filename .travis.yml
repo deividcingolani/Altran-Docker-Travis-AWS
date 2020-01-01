@@ -1,0 +1,21 @@
+language: generic
+sudo: required
+services: -docker
+before_install:
+  - docker build -t davidcingolani/Altran-Docker-Travis-AWS-f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true davidcingolani/Altran-Docker-Travis-AWS npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "Altran-AWS"
+  env: "AltranAws-env"
+  bucket_name: "elasticbeanstalk-us-west-2-768993639995"
+  bucket_path: "Altran-AWS"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+

@@ -1,0 +1,32 @@
+@import "../../../styles/variables.scss";
+
+.btn-text:link,
+.btn-text:visited {
+  font-size: 1.6rem;
+  color: $color-blue-light;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid $color-black;
+  padding: 3px;
+  transition: all 0.2s;
+}
+
+.btn-text:hover {
+  background-color: $color-blue-light;
+  color: $color-white;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+  transform: translateY(0);
+}
+
+.buttonSubmit.col-md-3 {
+  margin-top: 7rem;
+}
+
+form.row {
+  justify-content: center;
+}
