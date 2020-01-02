@@ -2,7 +2,7 @@ language: generic
 sudo: required
 services: -docker
 before_install:
-  - docker build -t davidcingolani/Altran-Docker-Travis-AWS-f Dockerfile.dev .
+  - docker build -t davidcingolani/Altran-Docker-Travis-AWS -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true davidcingolani/Altran-Docker-Travis-AWS npm run test
