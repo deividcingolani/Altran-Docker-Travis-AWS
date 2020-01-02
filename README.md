@@ -1,5 +1,6 @@
 AltranHeroes
-This repo is the same but with continuous Integration Workflow
+
+This repo is the same that altran Demo but with continuous Integration Workflow
 This is an application that provides gnomes information PROJECT Altran Heroes
 
 This is an application for a team who is playing a fantasy role-playing game and every time the heroes they play arrive at a town, they have the issue. They don't know the local population and what they can do to help them on their adventures.
