@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AltranHeroes
 
-## Available Scripts
+This is an application that provides gnomes information PROJECT Altran Heroes
 
-In the project directory, you can run:
+This is an application for a team who is playing a fantasy role-playing game and every time the heroes they play arrive at a town, they have the issue. They don't know the local population and what they can do to help them on their adventures.
 
-### `yarn start`
+For solution this issue, this app give they all information about gnomes of the city. Versions
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[0.2] (19/12/2019) Beta -> (http://altran.herokuapp.com/) .
+[0.1] (17/12/2019) Beta.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+LICENSE
 
-### `yarn test`
+https://github.com/deividcingolani/AltranHeroes/blob/master/LICENSE
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+fixs and functionalities to Add
 
-### `yarn build`
+When the select of City of Gnome change, it dont change nothing. This is because now there is a only city, but I think when there are more than 1 city.
+to Add backend of app, because with this there will be a posibily for add more gnome, edit and delete gnome.
+to Add backend for login each heroes and get his cities.
+to Fix select of Friends for mobile, because in some mobiles when is click in select, this dont show options, and sometimes when the options are showing dont do nothing. -To fix when is settings filters gender in url -To add profile of Heroe
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Decision core
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+how table of gnomes is responsive I was need take a decision about the count of column to show, and my decision was hidden the column about details of gnomes, because I think when a heroe is show the table, he need a quickly information about name and city of gnome, and the other information is more as details.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To determine the gender of the gnomes, how do I have no information about the gender, Determine to use Fuction Math.Random for each gnome, and when it returns a number greater than 0.7 it is a female, and when the number is less than and equal to 0.7 It's male.
 
-### `yarn eject`
+For show the details of gnomes, I decide use a modal because is more easy for read the information and navigate between friends.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For table, I use component React-Table because with this I can use pagination and ordering more easy and quicly, but filters are building outside of table because when if I try put the filters inside of my table there are showing in relation with header and is not clean for a quicly lecture.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Requirements
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Node Version v12.13.1
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Install
 
-## Learn More
+$ git clone https://github.com/deividcingolani/AltranHeroes.git $ cd AltranHeroes $ npm install $ npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Simple build for production $ npm run build
