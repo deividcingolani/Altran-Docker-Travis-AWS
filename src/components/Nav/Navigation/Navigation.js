@@ -13,7 +13,7 @@ export function Navigation() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link className="navLink" to="/" activeclassname="selected">
-              Home
+              HOME
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
